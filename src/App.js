@@ -1,13 +1,24 @@
 import './App.css';
-import UserRegistrationFormProvider from './contexts/UserRegistrationContext';
+import UserRegistrationFormProvider, { UserRegistrationFormContext } from './contexts/UserRegistrationContext';
 import UserRegistration from './components/user-registration/user-registration';
+import { useContext } from 'react';
 
 function App() {
+
+  const {state} = useContext(UserRegistrationFormContext);
+  
   return (
     <div className="App">
-      <UserRegistrationFormProvider>
         <UserRegistration/>
-      </UserRegistrationFormProvider>
+      {
+        state.printData?
+          <div className="App-print-state">
+            {
+              <code>{JSON.stringify(state.printData)}</code>
+            }
+          </div>
+        :null
+      }
     </div>
   );
 }

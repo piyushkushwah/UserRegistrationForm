@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+}
+
+.App-print-state{
+  max-width: 25vw;
+  padding: 10px;
+  height: fit-content;
+  position: absolute;
+  right: 40px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  overflow: hidden;
+  background-color: black;
+}
+
+.App-print-state code{
+  word-break: break-all;
+  background-color: black;
+  color: green;
+}
+
+.form-control{
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.btn-primary{
+  width: 100px;
+  padding: 10px 23px;
+  background-color: #185ADB;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.tab-head div{
+  padding: 10px 20px;
+  background-color: #185ADB;
+  cursor: pointer;
+  transition-duration: 1s;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.tab-head div:first-child{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tab-head div:last-child{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.tab-body{
+  margin-top: 30px;
+}
+
+.m-10{
+  margin: 10px 0;
+}
+
+.ml-5{margin-left: 5px;}
+
+.m-5{
+  margin: 5px 0;
 }
