@@ -49,6 +49,9 @@ export default function UserRegistration({ getGlobalStateData }) {
                     : tab.selected
                     ? "#0A1931"
                     : "",
+                color: state.error &&
+                state?.error[tab.label] !== undefined &&
+                state?.error[tab.label]?.length !== 0 && tab.selected ? 'blue' :'' 
               }}
               onClick={() => getSelectedTab(index)}
               key={tab.id + tab.name}
