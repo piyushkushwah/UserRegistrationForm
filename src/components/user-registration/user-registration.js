@@ -45,7 +45,7 @@ export default function UserRegistration({ getGlobalStateData }) {
                   state.error &&
                   state?.error[tab.label] !== undefined &&
                   state?.error[tab.label]?.length !== 0
-                    ? "red"
+                    ? "#b11a21"
                     : tab.selected
                     ? "#0A1931"
                     : "",
