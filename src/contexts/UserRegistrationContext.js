@@ -36,10 +36,7 @@ export default function UserRegistrationFormProvider({ children }) {
         }
     }
 
-    if(hasError){
-        return alert('Not valid details');
-    }
-    
+    if(hasError)return;
     dispatch({ type: SUBMIT_DATA });
   };
 
