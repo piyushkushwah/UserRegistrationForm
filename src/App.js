@@ -1,5 +1,5 @@
 import './App.css';
-import UserRegistrationFormProvider, { UserRegistrationFormContext } from './contexts/UserRegistrationContext';
+import  { UserRegistrationFormContext } from './contexts/UserRegistrationContext';
 import UserRegistration from './components/user-registration/user-registration';
 import { useContext } from 'react';
 

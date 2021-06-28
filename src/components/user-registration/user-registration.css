@@ -1,24 +1,24 @@
-.user-registration{
-    width: calc(40% - 13px);
-    padding: 10px 13px;
-    height: 78vh;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    position: relative;
+.user-registration {
+  width: calc(40% - 13px);
+  padding: 10px 13px;
+  min-height: 78vh;
+  max-height: fit-content;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
 }
 
-.user-registration-tab-head{
+.user-registration-tab-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-registration-btn-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.user-registration-btn{
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    margin: auto;
+    width: 100%;
 }
 
