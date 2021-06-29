@@ -97,7 +97,7 @@ export default function UserRegistration({ getGlobalStateData }) {
               state.error.employmentHistory.length > 0
                 ? "0.5"
                 : "",
-          }}
+            }}
           disabled={
             state.error.basicInfo.length > 0 ||
             state.error.eductationalDetails.length > 0 ||

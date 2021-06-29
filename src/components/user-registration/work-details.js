@@ -18,7 +18,7 @@ export default function WorkDetails() {
     <div>
       {workDetails.map((info) => {
         return (
-          <div key={info.id}>
+          <div key={info.id+info.name}>
             <label htmlFor={info.name}>{info.label}</label>
             <input
               className="form-control"
@@ -48,7 +48,7 @@ export default function WorkDetails() {
         <h4>Job Type:</h4>
         {jobType.map((data) => {
           return (
-            <div key={data.id}>
+            <div key={data.id+data.name}>
               <input
                 className="m-5"
                 type="radio"
@@ -82,7 +82,7 @@ export default function WorkDetails() {
         <h4>Employment Status:</h4>
         {employmentStatus.map((data) => {
           return (
-            <div className="m-5" key={data.id}>
+            <div className="m-5" key={data.id+data.name}>
               <input
                 type="radio"
                 onChange={(event) => getFormData(event, "employmentHistory")}
@@ -115,7 +115,7 @@ export default function WorkDetails() {
         <h4>Hobbies:</h4>
         {hobbies.map((hobbie) => {
           return (
-            <div className="m-5" key={hobbie.id}>
+            <div className="m-5" key={hobbie.id+hobbie.name}>
               <input
                 type="checkbox"
                 name={hobbie.name}

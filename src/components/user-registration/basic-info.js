@@ -21,7 +21,7 @@ export default function BasicInfo() {
     <div>
       {basicInfo.map((info) => {
         return (
-          <div key={info.id}>
+          <div key={info.id+info.name}>
             <label htmlFor={info.name}>{info.label}</label>
             <input
               style={{
@@ -50,7 +50,7 @@ export default function BasicInfo() {
         <h4>Gender:</h4>
         {genders.map((gender) => {
           return (
-            <div key={gender.id}>
+            <div key={gender.id+gender.name}>
               <input
                 className="m-5"
                 type="radio"
@@ -123,7 +123,7 @@ export default function BasicInfo() {
 
         {languages.map((language) => {
           return (
-            <div key={language.id}>
+            <div key={language.id+language.name}>
               <input
                 type="checkbox"
                 name={language.name}
